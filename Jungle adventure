@@ -1,0 +1,38 @@
+
+
+def intro():
+    print("Welcome to the Jungle Adventure Game!")
+    time.sleep(2)
+    print("You find yourself in a dense jungle, surrounded by towering trees and strange noises.")
+    time.sleep(2)
+    print("Your mission is to find the hidden treasure in the heart of the jungle.")
+    time.sleep(2)
+    print("Are you ready to begin your adventure?")
+
+def choose_path():
+    print("You come to a fork in the road. Do you go left or right?")
+    choice = input("Type 'left' or 'right' and press enter: ")
+    if choice.lower() == "left":
+        print("You encounter a pack of hungry wolves. They chase you away from the path.")
+        time.sleep(2)
+        print("You are lost in the jungle. Try again!")
+    elif choice.lower() == "right":
+        print("You hear the sound of running water in the distance. You follow the sound and come to a river.")
+        time.sleep(2)
+        print("You can swim across the river or try to find a way to cross.")
+        time.sleep(2)
+        print("What do you do?")
+        choice = input("Type 'swim' or 'look around' and press enter: ")
+        if choice.lower() == "swim":
+            print("You swim across the river successfully!")
+            time.sleep(2)
+            print("You continue on the path and come to a clearing.")
+            time.sleep(2)
+            print("There is a cave in the distance. You can see a glimmer of light inside.")
+            time.sleep(2)
+            print("Do you enter the cave?")
+            choice = input("Type 'yes' or 'no' and press enter: ")
+            if choice.lower() == "yes":
+                print("You enter the cave and find the treasure!")
+                time.sleep(2)
+               Print(“Congratulations! You have won the game!”)
